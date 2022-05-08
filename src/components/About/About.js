@@ -5,6 +5,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import Travelstack from "./Travelstack";
 
 function About() {
   return (
@@ -38,9 +39,14 @@ function About() {
         </h1>
 
         <Techstack />
+        
+        <h1 className="project-heading">
+        It’s a big world out there : <strong className="purple">Go explore</strong>
+        </h1>
+        <Travelstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Books</strong> in library
+          <strong className="purple">Books</strong> trying to read
         </h1>
         {/* <Toolstack /> */}
 

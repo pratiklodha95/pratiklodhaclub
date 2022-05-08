@@ -43,7 +43,7 @@ function AboutCard() {
         </section>
           
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Take every chance you get in life, because there's undo in life !!"{" "}
+            "Take every chance you get in life, because YOLO !!"{" "}
           </p>
           <footer className="blockquote-footer">Pratik Lodha</footer>
 
