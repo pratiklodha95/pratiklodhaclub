@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -8,6 +8,45 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import styled from 'styled-components';
+
+
+const Button = styled.a`
+  line-height: 2;
+  height: 3.5rem;
+  text-decoration: none;
+  display:inline-flex;
+  color: #FFFFFF;
+  background-color: #c770f0;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  font-size: 2rem;
+  letter-spacing: 0.6px;
+  box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5);
+  transition: 0.3s all linear;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5);
+    opacity: 0.85;
+    color:#FFFFFF;
+  }
+`;
+
+const Image = styled.img`
+  height: 34px;
+  width: 35px;
+  margin-bottom: 1px;
+  box-shadow: none;
+  border: none;
+  vertical-align: middle;
+`;
+
+const Text = styled.span`
+  margin-left: 15px;
+  font-size: 1rem;
+  vertical-align: middle;
+`;
 
 function Home2() {
   return (
@@ -37,54 +76,16 @@ function Home2() {
           </Col>
         </Row>
         <Row>
-          {/* <Col md={12} className="home-about-social">
+           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Best way to catchup is  <span className="purple">over a coffee </span>with me
             </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
-          </Col> */}
+            <Button target="_blank" href="https://www.buymeacoffee.com//pratiklodha">
+              <Image src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee" />
+              <Text>Let's have a coffee</Text>
+            </Button>
+          </Col> 
         </Row>
       </Container>
     </Container>
