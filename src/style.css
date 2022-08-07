@@ -591,6 +591,11 @@ section.smallfont {
   transition: all 0.4s ease 0s !important;
 }
 
+.tech-icons a{
+  color: white !important; 
+  text-decoration: none !important;
+}
+
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;

@@ -43,7 +43,7 @@ function Techstack() {
         horse riding
       </Col>
       <Col xs={4} md={7} className="tech-icons">
-        suggest me what next
+        <a href="https://wa.me/919619369767" target='_blank' rel="noreferrer" >suggest me what next</a>
       </Col>
     </Row>
   );
